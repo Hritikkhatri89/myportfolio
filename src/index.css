@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  
+  --color-primary-50: #f5f3ff;
+  --color-primary-100: #ede9fe;
+  --color-primary-200: #ddd6fe;
+  --color-primary-300: #c4b5fd;
+  --color-primary-400: #a78bfa;
+  --color-primary-500: #8b5cf6;
+  --color-primary-600: #7c3aed;
+  --color-primary-700: #6d28d9;
+  --color-primary-800: #5b21b6;
+  --color-primary-900: #4c1d95;
+  --color-primary-950: #2e1065;
+}
+
+@layer base {
+  .container {
+    @apply mx-auto px-8 md:px-12 max-w-7xl;
+  }
+  body {
+    @apply bg-[#030014] text-slate-100 font-outfit;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+  
+  .nav-link {
+    @apply relative text-slate-400 hover:text-white transition-colors duration-300 py-2;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-violet-500 transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300 hover:-translate-y-1 active:scale-95 text-white;
+  }
+}
