@@ -88,9 +88,9 @@ Optimize images (your dist folder is heavy)
 
 Name: Hritik Khatri
 
-Email: (add your email here)
+Email: ritikkhatri51@gamil.com
 
-Portfolio: (add deployed link)
+Portfolio: 
 
 🧠 Final Reality Check
 
