@@ -47,7 +47,7 @@ This project showcases projects, skills, resume, and contact functionality in a 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Hritikkhatri89/portfolio.git
+git clone https://github.com/your-username/portfolio.git
 cd portfolio
 ```
 
@@ -113,8 +113,8 @@ If you're serious about getting a job, presentation matters as much as code.
 ## 📧 Contact
 
 * Name: Hritik Khatri
-* Email: ritikkhatri51@gmail.com
-* Portfolio:https://myportfolio-main-eosin.vercel.app/
+* Email: (add your email here)
+* Portfolio: (add deployed link)
 
 ---
 
